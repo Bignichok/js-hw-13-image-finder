@@ -4,7 +4,7 @@ class ApiService {
     this.page = page;
   }
 
-  fetchImages() {
+  getImages() {
     const apiKey = '18172942-eab38dca32c93699ea5d62826';
     const baseUrl =
       'https://pixabay.com/api/?image_type=photo&orientation=horizontal&';
