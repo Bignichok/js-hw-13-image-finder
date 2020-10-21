@@ -13,13 +13,13 @@ class ApiService {
     return fetch(url)
       .then(resp => resp.json())
       .then(({ hits }) => {
-        this._incremetPage();
+        this._incrementPage();
         return hits;
       })
       .catch(error => console.log(error));
   }
 
-  _incremetPage() {
+  _incrementPage() {
     this.page += 1; // вот тут работаю с номером страницы
   }
   resetPage() {
